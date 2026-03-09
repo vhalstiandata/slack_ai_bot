@@ -11,10 +11,10 @@ _cache = None
 # ───────────────────────────────────────────────
 # Load from ENV (як в analytics_core.py)
 # ───────────────────────────────────────────────
-BQ_PROJECT       = os.getenv("BIGQUERY_PROJECT", "finance-ai-bot-headway")
-BQ_DATASET       = os.getenv("BQ_DATASET", "uploads")
-BQ_REVENUE_TABLE = os.getenv("BQ_REVENUE_TABLE", "revenue_test_databot")
-BQ_COST_TABLE    = os.getenv("BQ_COST_TABLE", "cost_test_databot")
+BQ_PROJECT       = os.getenv("BIGQUERY_PROJECT", "")
+BQ_DATASET       = os.getenv("BQ_DATASET", "")
+BQ_REVENUE_TABLE = os.getenv("BQ_REVENUE_TABLE", "")
+BQ_COST_TABLE    = os.getenv("BQ_COST_TABLE", "")
 
 
 def _schema(table):
