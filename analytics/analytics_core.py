@@ -68,10 +68,10 @@ from analytics.trend_analysis import run_trend_analysis
 # ──────────────────────────────────────────────────────────────────────────────
 # ENV / LOGGING SETUP
 # ──────────────────────────────────────────────────────────────────────────────
-BQ_PROJECT       = os.getenv("BIGQUERY_PROJECT", "finance-ai-bot-headway")
-BQ_DATASET       = os.getenv("BQ_DATASET", "uploads")
-BQ_REVENUE_TABLE = os.getenv("BQ_REVENUE_TABLE", "revenue_test_databot")
-BQ_COST_TABLE    = os.getenv("BQ_COST_TABLE", "cost_test_databot")
+BQ_PROJECT       = os.getenv("BIGQUERY_PROJECT", "")
+BQ_DATASET       = os.getenv("BQ_DATASET", "")
+BQ_REVENUE_TABLE = os.getenv("BQ_REVENUE_TABLE", "main_kpi_with_budget")
+BQ_COST_TABLE    = os.getenv("BQ_COST_TABLE", "budget")
 VERTEX_LOCATION  = os.getenv("VERTEX_LOCATION", "europe-west1")
 LOCAL_TZ         = os.getenv("LOCAL_TZ", "Europe/Kyiv")
 
