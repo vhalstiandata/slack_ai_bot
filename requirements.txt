@@ -15,3 +15,5 @@ python-dateutil
 slack-bolt
 pytest
 python-multipart
+google-cloud-bigquery-storage
+pyarrow
