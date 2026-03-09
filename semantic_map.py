@@ -8,8 +8,8 @@ from google.cloud import bigquery
 from google.api_core.exceptions import NotFound
 
 # Налаштування BigQuery
-BQ_PROJECT = os.getenv("BIGQUERY_PROJECT", "finance-ai-bot-headway")
-BQ_DATASET = os.getenv("BQ_DATASET", "uploads")
+BQ_PROJECT = os.getenv("BIGQUERY_PROJECT","")
+BQ_DATASET = os.getenv("BQ_DATASET", "")
 BQ_MAP_TABLE = f"{BQ_PROJECT}.{BQ_DATASET}.semantic_map_dynamic"
 
 bq_client = bigquery.Client(project=BQ_PROJECT)
